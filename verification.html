@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>verification</title>
     <link rel="stylesheet" href="css/verification.css">
-    <script src="js/app.js" defer></script>
+    <script src="js/verify.js" defer></script>
 </head>
 <body>
     <div class="verification-container">
         <form class="verification-form" aria-labelledby="verification-header" id="verification-form">
             <h2 id="verification-header" tabindex="0">Confirm Phone Number</h2>
             <!-- <hr class="divider"> -->
-            <p class="time-elapse">Expires in 03:00 secs</p>
+            <p class="time-elapse" id="time-elapse">Expires in 03:00 secs</p>
             <h1>Dial *233#</h1>
             <p>Follow the prompt and enter the <br> 
                 verification code below</p>
@@ -24,7 +24,7 @@
                 <input class="verification-input" value="6" type="text" maxlength="1" required />
                 <input class="verification-input" value="5" type="text" maxlength="1" required />
             </div>
-            <button class="submit-button" type="submit">Verify</button>
+            <!-- <button class="submit-button" type="submit">Verify</button> -->
             <hr class="divider">
             <small>Having trouble with *233#? <a href="#!">Try different way</a></small>
         </form>

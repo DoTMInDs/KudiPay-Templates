@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login {
+    background-color: rgba(61, 83, 97, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .div {
+    display: flex;
+    max-width: 100%;
+    width: 637px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .div-2 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  .sign-up-form {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 26px 64px;
+  }
+ 
+  .logo-name {
+    color: rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.16px;
+    text-align: center;
+    align-self: center;
+    font: 700 16px/1 Inter, sans-serif;
+  }
+  .welcome-please-enter-your-phone-number {
+    color: rgba(0, 0, 0, 0.6);
+    letter-spacing: 0.13px;
+    text-align: center;
+    align-self: center;
+    margin-top: 9px;
+    font: 600 13px/1 Inter, sans-serif;
+  }
+  .input-field {
+    display: flex;
+    margin-top: 12px;
+    min-height: 70px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    font: var(--sds-typography-body-font-weight-regular)
+      var(--sds-typography-body-size-medium)
+      var(--sds-typography-body-font-family);
+  }
+  @media (max-width: 991px) {
+    .input-field {
+      max-width: 100%;
+    }
+  }
+  .label {
+    color: var(--sds-color-text-default-default);
+    line-height: 1.4;
+  }
+  @media (max-width: 991px) {
+    .label {
+      max-width: 100%;
+    }
+  }
+  .input {
+    align-self: stretch;
+    flex: 1;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 1);
+    min-width: 240px;
+    margin-top: 8px;
+    width: 100%;
+    overflow: hidden;
+    color: var(--sds-color-text-default-tertiary);
+    line-height: 1;
+    padding: 12px 16px;
+    border: 1px solid rgba(255, 76, 76, 1);
+  }
+  @media (max-width: 991px) {
+    .input {
+      max-width: 100%;
+    }
+  }
+  .input-field-2 {
+    display: flex;
+    margin-top: 17px;
+    min-height: 70px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    font: var(--sds-typography-body-font-weight-regular)
+      var(--sds-typography-body-size-medium)
+      var(--sds-typography-body-font-family);
+  }
+  @media (max-width: 991px) {
+    .input-field-2 {
+      max-width: 100%;
+    }
+  }
+  .div-3 {
+    display: flex;
+    margin-top: 4px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @media (max-width: 991px) {
+    .div-3 {
+      max-width: 100%;
+      margin-right: 2px;
+    }
+  }
+  .div-4 {
+    display: flex;
+    flex-direction: column;
+  }
+  .your-password-is-incorrect {
+    color: rgba(255, 76, 76, 1);
+    letter-spacing: 0.11px;
+    text-align: center;
+    align-self: start;
+    font: 600 11px/1 Inter, sans-serif;
+  }
+  .checkbox-field {
+    display: flex;
+    margin-top: 7px;
+    min-height: 24px;
+    width: 100%;
+    flex-direction: column;
+    color: rgba(30, 30, 30, 0.9);
+    justify-content: start;
+    font: var(--sds-typography-body-font-weight-regular)
+      var(--sds-typography-body-size-medium) / 1.4
+      var(--sds-typography-body-font-family);
+  }
+  .checkbox-and-label {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 12px;
+    justify-content: start;
+  }
+  .checkbox {
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 1);
+    align-self: stretch;
+    display: flex;
+    width: 16px;
+    height: 16px;
+    gap: 10px;
+    margin: auto 0;
+    border: 1px solid rgba(117, 117, 117, 1);
+  }
+  .label-2 {
+    align-self: stretch;
+    flex: 1;
+    flex-basis: 0%;
+    margin: auto 0;
+  }
+  .forgot-password {
+    color: rgba(255, 0, 0, 0.6);
+    letter-spacing: 0.13px;
+    text-align: right;
+    align-self: end;
+    margin-top: 24px;
+    font: 600 13px/1 Inter, sans-serif;
+  }
+  .button {
+    align-self: stretch;
+    border-radius: 8px;
+    background-color: #3d5361;
+    margin-top: 24px;
+    min-height: 40px;
+    border: none;
+    gap: 8px;
+    overflow: hidden;
+    color: #fefefe;
+    white-space: nowrap;
+    padding: 12px;
+    cursor: pointer;
+    font: var(--sds-typography-body-font-weight-regular)
+      var(--sds-typography-body-size-medium) / 1
+      var(--sds-typography-body-font-family);
+    border: 1px solid rgba(44, 44, 44, 1);
+  }
+  .button:hover {
+    background-color: #3d5361c7;
+}
+  @media (max-width: 991px) {
+    .button {
+      white-space: initial;
+    }
+  }
+  .new-on-our-platform-create-account {
+    color: rgba(0, 0, 0, 0.6);
+    letter-spacing: 0.13px;
+    text-align: center;
+    align-self: center;
+    margin-top: 15px;
+    font: 600 13px/1 Inter, sans-serif;
+  }
+  .img {
+    aspect-ratio: 500;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    margin-top: 15px;
+  }
+  @media (max-width: 991px) {
+    .img {
+      max-width: 100%;
+      margin-right: 5px;
+    }
+  }
+  .terms-and-conditions-privacy-policy {
+    color: rgba(0, 0, 0, 0.36);
+    letter-spacing: 0.12px;
+    text-align: center;
+    align-self: center;
+    margin-top: 19px;
+    font: 400 12px/1 Inter, sans-serif;
+  }

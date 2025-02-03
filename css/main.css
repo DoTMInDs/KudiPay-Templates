@@ -15,9 +15,22 @@ body {
     background: #fefefe;
     box-shadow: 2px 1px 4px 5px rgba(155, 151, 151, 0.25);
 }
+@media screen and (max-width: 1310px) {
+    .navbar-wrapper .navbar{
+        width: 95%;
+        transition: width 300ms ease;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .navbar-wrapper .navbar{
+        width: 100%;
+        transition: width 300ms ease;
+    }
+}
 @media screen and (max-width: 900px) {
     .navbar-wrapper .navbar{
        width: 100%;
+       transition: width 300ms ease;
     }
 }
 .navbar{
@@ -26,6 +39,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: width 300ms ease;
 }
 .navbar-title{
     display: flex;
@@ -65,7 +79,9 @@ body {
     align-items: center;
     gap: 1rem;
 }
-
+.profile-name{
+    text-wrap: nowrap;
+}
 .avatar{
     width: 40px;
     height : 40px;

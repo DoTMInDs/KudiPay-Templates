@@ -70,11 +70,49 @@
 
 
    <main class="px-4 lg:px-0 lg:w-3/5 mx-auto h-screen">
-      <button onclick="goBack()" class="mb-[1rem] rounded-full py-[6px] px-[18px] text-[#3D5361] text-[13px]">
-        <i class="fa-solid fa-circle-arrow-left mr-[0.5rem]"></i>
-        Back
-      </button>
-      <section class="mt-8">
+     <section class="mt-8">
+        <button onclick="goBack()" class="mb-[1rem] rounded-full py-[6px] px-[18px] text-[#3D5361] text-[13px]">
+          <i class="fa-solid fa-circle-arrow-left mr-[0.5rem]"></i>
+          Back
+        </button>
+         <div class="flex justify-center items-center w-full h-screen">
+            <form action="bg-white shadow-md w-[400px] p-6">
+                <div class="bg-gray-200 flex justify-between items-center p-4">
+                    <div class="flex items-center gap-2">
+                      <div class="w-[80px]">
+                        <img
+                          loading="lazy"
+                          src="https://cdn.builder.io/api/v1/image/assets/17da197c92654774add6a532f5845f39/dc43b92755e8b50b5d9a1c0fb4d8dbfb5c2fa09fd924eab717316ad399430c41?apiKey=17da197c92654774add6a532f5845f39&"
+                          class="object-cover object-center w-full"
+                          alt="MTN logo"
+                            />
+                      </div>
+                      <div class="">
+                          <h5 class="text-[12px]">KudiPay wallet</h5>
+                          <small>MTN</small>
+                      </div>
+                    </div>
+                    <div class="">
+                      <p class="text-gray-500 text-[10px]"><a href="">Change</a></p>
+                    </div>
+                </div>
+                <div class="input-field py-4">
+                    <input type="text" placeholder="Enter your number" name="phone" class="w-full text-[14px] p-2 outline-none bg-transparent">
+                </div>
+                <div class="input-field py-4">
+                    <input type="text" value="GHS 10000" name="text" disabled class="w-full text-[14px] p-2 outline-none bg-transparent">
+                </div>
+
+                <p class="text-red-400 text-[12px] text-center">Need help with payment?</p>
+
+                <button type="submit" class="bg-gray-500 w-full py-2 rounded">
+                  <a href="" class="text-white">
+                    <i class="fa fa-solid fa-dollar"></i>
+                    Pay
+                  </a>
+              </button>
+            </form>
+         </div>
           
       </section>
     </main>

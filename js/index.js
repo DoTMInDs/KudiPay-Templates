@@ -17,3 +17,8 @@ accountBtn.addEventListener('click', () => {
     dropdown.classList.toggle('show');
     // console.log('clicked');
 })
+
+
+function goBack() {
+    window.history.back();
+}

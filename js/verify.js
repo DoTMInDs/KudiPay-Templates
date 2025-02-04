@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (timeLeft <= 0) {
           clearInterval(countdown);
           window.location.href = 'confirmation.html';
-          window.location.href = 'home.html';
+          window.location.href = 'login.html';
       } else {
           timeElapseElement.textContent = `Expires in 00:${timeLeft < 10 ? '0' : ''}${timeLeft} secs`;
           timeLeft--;

@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #F6EFEF;
+}
+main{
+    margin-top: 5%;
+}
+
+section{
+    width: 60%;
+    margin: auto;
+    
+}
+@media screen and (max-width:1300px) {
+    section{
+        width: 100%;
+        padding: 0 1rem;
+        transition: width 300ms ease,
+                    padding 300ms ease;
+    }
+    
+}
+.h1_header{
+    font-size: 35px;
+    font-family: sans-serif;
+    color: #3d5361;
+}
+.p_header_p{
+    font-size: 16px;
+    color: #3d5361;
+    font-family: sans-serif;
+    padding-top: 0.5rem;
+}
+.search-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 2rem;
+    color: #3d5361;
+}
+.search-wrapper .search-input{
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #3d5361a6;
+    padding: 0 1rem;
+    border-radius: 25px;
+    width: 450px;
+}
+.search{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    color: #3d5361;
+    font-family: sans-serif;
+}
+.search-input .fa-magnifying-glass{
+    cursor: pointer;
+}
+
+
+/*--------------------------------------------------------------------------------------
+INVOICE-SECTION
+----------------------------------------------------------------------------------------*/
+.table-wrapper{
+    margin-top: 2rem;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow-x: scroll;
+}
+table {
+    width: 100%;
+    
+}
+th{
+    /* text-align: left;
+    color: #3d5361;
+    font-size: 16px; */
+}
+table tr, th, td{
+    /* padding: 1.5rem 1rem;
+    border-bottom: 1px solid #e0d3d3;
+    white-space: nowrap; */
+    /* color: #3d5361; */
+    /* font-size: 14px; */
+}
+.date{
+    /* color: #747474;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: sans-serif; */
+}
+.invoice-ID{
+    color: #009dff;
+    font-weight: 600;
+    font-family: sans-serif;
+}

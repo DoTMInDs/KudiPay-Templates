@@ -1,4 +1,12 @@
-
+.pay-imgs-wrapper{
+    width: 60px;
+    height: 40px;
+}
+.pay-imgs{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 .nav-section{
     height: 80px;
 }

@@ -83,24 +83,7 @@ table {
     width: 100%;
     
 }
-th{
-    /* text-align: left;
-    color: #3d5361;
-    font-size: 16px; */
-}
-table tr, th, td{
-    /* padding: 1.5rem 1rem;
-    border-bottom: 1px solid #e0d3d3;
-    white-space: nowrap; */
-    /* color: #3d5361; */
-    /* font-size: 14px; */
-}
-.date{
-    /* color: #747474;
-    font-size: 14px;
-    font-weight: 600;
-    font-family: sans-serif; */
-}
+
 .invoice-ID{
     color: #009dff;
     font-weight: 600;

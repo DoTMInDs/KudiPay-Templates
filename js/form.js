@@ -36,7 +36,7 @@
      // Validate confirm PIN (must match PIN)
      if (pin !== confirmPin) {
        alert('Pins do not match!');
-       return;
+       return ;
      }
   
     // Redirect to verification page

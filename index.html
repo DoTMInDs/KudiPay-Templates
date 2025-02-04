@@ -4,62 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Signup</title>
-  <link rel="stylesheet" href="css/signup.css">
+  <!-- <link rel="stylesheet" href="css/signup.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <script src="js/form.js" defer></script>
 </head>
-<body>
-  <section class="signup-container">
-    <div class="signup-wrapper">
-      <div class="signup-content">
-        <form class="signup-form" aria-labelledby="signup-title" id="signup-form" onsubmit="return validateForm()">
-          <h1 id="signup-title" class="signup-heading">Sign-Up</h1>
-          <p class="signup-description">
-            Please enter your Personal Details and Contact<br>
-            information to create a new account
-          </p>
-          
-          <div class="form-field">
-            <label for="phone" class="input-label">Phone Number</label>
-            <input type="tel" id="phone" class="form-input" placeholder="Enter your phone number" >
-          </div>
-          
-          <div class="form-field">
-            <label for="firstName" class="input-label">First Name*</label>
-            <input type="text" id="firstName" class="form-input" placeholder="Enter your first name" >
-          </div>
-          
-          <div class="form-field">
-            <label for="lastName" class="input-label">Last Name*</label>
-            <input type="text" id="lastName" class="form-input" placeholder="Enter your last name" >
-          </div>
-          
-          <div class="form-field">
-            <label for="pin" class="input-label">Pin*</label>
-            <input type="password" id="pin" class="form-input" placeholder="Enter your 4 digit pin" pattern="[0-9]{4}" maxlength="4" >
-          </div>
-          
-          <div class="form-field">
-            <label for="confirmPin" class="input-label">Confirm Pin*</label>
-            <input type="password" id="confirmPin" class="form-input" placeholder="Confirm your 4 digit pin" pattern="[0-9]{4}" maxlength="4" >
-          </div>
-          
-          <div class="terms-checkbox">
-            <input type="checkbox" id="terms" class="checkbox-input" >
-            <label for="terms" class="terms-text">
-              I agree to the <a href="#" class="terms-link">terms and conditions</a>
-            </label>
-          </div>
-          
-          <button type="submit" class="submit-button">Submit</button>
-          
-          <img src="https://cdn.builder.io/api/v1/image/assets/17da197c92654774add6a532f5845f39/37d24b874e1a877656e0547a2c0214423d6f68ff3f71bf2854e84c48327c2538?apiKey=17da197c92654774add6a532f5845f39&" alt="" class="divider">
-          
-          <p class="login-text">
-            Already have an account? <a href="login.html" class="login-link">Login</a>
-          </p>
-        </form>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+  <section class="w-full max-w-lg p-8 bg-white rounded-lg shadow-lg">
+    <form class="space-y-6" id="signup-form" onsubmit="return validateForm()">
+      <div class="text-center">
+        <h1 id="signup-title" class="text-2xl font-semibold text-gray-800">Sign-Up</h1>
+        <p class="text-gray-600 mt-2">
+          Please enter your Personal Details and Contact<br>
+          information to create a new account
+        </p>
       </div>
-    </div>
+      
+      <div class="form-field">
+        <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+        <input type="tel" id="phone" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter your phone number" required>
+      </div>
+      
+      <div class="form-field">
+        <label for="firstName" class="block text-sm font-medium text-gray-700">First Name*</label>
+        <input type="text" id="firstName" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter your first name" required>
+      </div>
+      
+      <div class="form-field">
+        <label for="lastName" class="block text-sm font-medium text-gray-700">Last Name*</label>
+        <input type="text" id="lastName" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter your last name" required>
+      </div>
+      
+      <div class="form-field">
+        <label for="pin" class="block text-sm font-medium text-gray-700">Pin*</label>
+        <input type="password" id="pin" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter your 4 digit pin" pattern="[0-9]{4}" maxlength="4" required>
+      </div>
+      
+      <div class="form-field">
+        <label for="confirmPin" class="block text-sm font-medium text-gray-700">Confirm Pin*</label>
+        <input type="password" id="confirmPin" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Confirm your 4 digit pin" pattern="[0-9]{4}" maxlength="4" required>
+      </div>
+      
+      <div class="terms-checkbox flex items-center">
+        <input type="checkbox" id="terms" class="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded" required>
+        <label for="terms" class="ml-2 block text-sm text-gray-900">
+          I agree to the <a href="#" class="text-gray-700 font-bold hover:text-gray-600">terms and conditions</a>
+        </label>
+      </div>
+      
+      <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-gray-600 hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Submit</button>
+      
+      <div class="text-center text-sm text-gray-600">
+        Already have an account? <a href="login.html" class="font-medium text-red-400 hover:text-red-500">Login</a>
+      </div>
+    </form>
   </section>
 </body>
 </html>

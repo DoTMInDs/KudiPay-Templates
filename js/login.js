@@ -1,22 +1,20 @@
 
   function validateForm() {
-    const phone = document.getElementById('phone-number').value;
+    const phoneNumber = document.getElementById('phone-number').value;
     const pin = document.getElementById('pin').value;
     // const terms = document.getElementById('terms').checked;
   
-    // Validate phone number (example: must be 10 digits)
-    const phonePattern = /^\d{10}$/;
-    if (!phonePattern.test(phone)) {
-      alert('Please enter a valid 10-digit phone number.');
-      return;
-    }
+    // Example validation: Check if phone number and pin are not empty
+    if (phoneNumber.trim() === '' || pin.trim() === '') {
+      alert('Please fill in all fields.');
+      return false;
+  }
 
-     // Validate PIN (example: must be 4 digits)
-     const pinPattern = /^\d{4}$/;
-     if (!pinPattern.test(pin)) {
-       alert('Please enter a valid 4-digit PIN.');
-       return;
-     }
+     // Example validation: Check if pin is 4 digits
+     if (!/^\d{4}$/.test(pin)) {
+      alert('Pin must be a 4-digit number.');
+      return false;
+  }
  
     // Redirect to verification page
     window.location.href = 'home.html';

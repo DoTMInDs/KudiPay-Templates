@@ -1,12 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    margin: 0;
-    font-family: Inter, sans-serif;
-}
+
 .nav-section{
     height: 80px;
 }
@@ -45,10 +37,6 @@ body {
     display: flex;
     align-items: center;
     padding: 0.5rem 1rem;
-}
-.kudi-logo-img{
-    width: 25px;
-    padding-right: 0.3rem;
 }
 .nav-links-wrapper{
     padding: 0.5rem 1rem;
@@ -232,7 +220,7 @@ MAIN-section
   .text-content {
     align-self: stretch;
     display: flex;
-    min-width: 240px;
+    min-width: 300px;
     flex-direction: column;
     justify-content: start;
     width: 553px;
@@ -240,47 +228,4 @@ MAIN-section
     padding: 20px;
   }
   
-  .welcome-heading {
-    color: rgba(0, 0, 0, 0.9);
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 1.2;
-  }
-  
-  .welcome-description {
-    color: rgba(0, 0, 0, 0.7);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 29px;
-    margin-top: 14px;
-  }
-  
-  .welcome-image {
-    aspect-ratio: 1.45;
-    object-fit: contain;
-    object-position: center;
-    width: 634px;
-    align-self: stretch;
-    min-width: 240px;
-    margin: auto 0;
-  }
-  
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-  }
-  
-  @media (max-width: 991px) {
-    .text-content,
-    .welcome-heading,
-    .welcome-description,
-    .welcome-image {
-      max-width: 100%;
-    }
-  }
+ 

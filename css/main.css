@@ -33,6 +33,17 @@
        transition: width 300ms ease;
     }
 }
+.payment-container{
+    width: 60%;
+    margin: auto;
+    height: 100vh;
+}
+.payment-section-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
 .navbar{
     width: 65%;

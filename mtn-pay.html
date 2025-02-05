@@ -6,6 +6,7 @@
     <title>Payment</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="js/pay.js" defer></script>
     <script src="js/index.js" defer></script>
     <script src="https://kit.fontawesome.com/1566b08547.js" crossorigin="anonymous"></script>
 </head>
@@ -15,25 +16,27 @@
         <div class=" navbar-wrapper mx-auto px-4 py-4 flex justify-between items-center">
           <div class="navbar">
             <div class="navbar-title">
-                <img src="files/kudiPay-logo.png" alt="KudiPay Logo" class="h-10 mr-3">    
+              <a href="home.html" class="flex items-center ">
+                <img src="files/kudiPay-logo.png" alt="KudiPay Logo" class="h-10 mr-[2px]">    
                 <span class="text-xl font-semibold text-gray-600">KudiPay</span>
+              </a>
             </div>
             <div class="nav-links-wrapper">
               <div class="nav-links" id="nav-links">
                 <a class="nav-link" href="home.html" tabindex="0" role="link">
-                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/17da197c92654774add6a532f5845f39/9766e359dd5b77d7e7d79ac0092fdbe6f1b93298c55896ce035f261e0628dcb4?apiKey=17da197c92654774add6a532f5845f39&" alt="Home icon" />
+                    <i class="fa fa-solid fa-home img-icon"></i>
                   <div>Home</div>
                 </a>
                 <a class="nav-link" href="invoice.html" tabindex="0" role="link">
-                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/17da197c92654774add6a532f5845f39/2f73f4dc623f007d9b7a2ae2d36ffb3526dfe620ac0ed360c558035447c22548?apiKey=17da197c92654774add6a532f5845f39&" alt="Invoice icon" />
+                    <i class="fa-solid fa-file-invoice img-icon"></i>
                   <div>Invoice</div>
                 </a>
                 <a class="nav-link " href="faq.html" tabindex="0" role="link">
-                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/17da197c92654774add6a532f5845f39/68390dcac8c8152f1ef0f8fb6c650fd500e6bc7d6da3a4750e985a11c7b5ac00?apiKey=17da197c92654774add6a532f5845f39&" alt="FAQ icon" />
+                    <i class="fa-solid fa-circle-question img-icon"></i>
                   <div>FAQ</div>
                 </a>
                 <a class="nav-link" href="help.html" tabindex="0" role="link">
-                  <img loading="lazy" class="icon-img" src="https://cdn.builder.io/api/v1/image/assets/17da197c92654774add6a532f5845f39/14b175277c40660965d917afd8a519e0bf2772524e227062af556a588fd31178?apiKey=17da197c92654774add6a532f5845f39&" alt="Help icon" />
+                    <i class="fa-solid fa-circle-info img-icon"></i>
                   <div>Help</div>
                 </a>
               </div>
@@ -54,7 +57,7 @@
                     </div>
                     <div class="dropdown-item">
                         <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/17da197c92654774add6a532f5845f39/13ede671c62a21ea00d03d9de5a4df1ea5ac243fc4a2d3a7da23469afdace5a1?apiKey=17da197c92654774add6a532f5845f39&" alt="Sign out icon" />
-                        <div>Sign-Out</div>
+                        <div><a href="login.html">Sign-Out</a></div>
                     </div>
                 </div> 
              </div>
@@ -68,15 +71,16 @@
         </div>
     </nav>
 
-
    <main class="px-4 lg:px-0 lg:w-3/5 mx-auto h-screen">
-     <section class="mt-8">
-        <button onclick="goBack()" class="mb-[1rem] rounded-full py-[6px] px-[18px] text-[#3D5361] text-[13px]">
-          <i class="fa-solid fa-circle-arrow-left mr-[0.5rem]"></i>
-          Back
-        </button>
-         <div class="flex justify-center items-center w-full h-screen">
-            <form action="bg-white shadow rounded w-[600px] p-6">
+     <section class="mt-3">
+        <div style="margin-top: 3rem;">
+          <button onclick="goBack()" class=" rounded-full py-[6px] px-[18px] text-[#3D5361] text-[13px]" >
+            <i class="fa-solid fa-circle-arrow-left mr-[0.5rem]"></i>
+            Back
+          </button>
+        </div>
+         <div class="flex justify-center items-center w-full h-screen ">
+            <form action="" onsubmit="return validateForm()"  style="width: 400px;background:white;padding:1.5rem;">
                 <div class="bg-gray-200 flex justify-between items-center p-4">
                     <div class="flex items-center gap-2">
                       <div class=" pay-imgs-wrapper">
@@ -84,27 +88,25 @@
                       </div>
                       <div class="">
                           <h5 class="text-[12px] font-bold">KudiPay wallet</h5>
-                          <small class="text-gray-300 font-semibold">MTN</small>
+                          <small class="text-gray-400 font-semibold">MTN</small>
                       </div>
                     </div>
                     <div class="">
-                      <p class="text-gray-500 text-[10px]"><a href="">Change</a></p>
+                      <p class="text-gray-700 text-[10px]"><a href="payment.html">Change</a></p>
                     </div>
                 </div>
                 <div class="input-field py-6">
-                    <input type="text" placeholder="Enter your number" name="phone" class="w-full text-[14px] p-2 border border-gray-200 outline-none bg-transparent">
+                    <input type="text" placeholder="Enter your number" name="phone" id="phone" class="w-full text-[14px] p-2 border border-gray-300 outline-none bg-transparent" required>
                 </div>
                 <div class="input-field py-6">
-                    <input type="text" value="GHS 10000" name="text" disabled class="w-full border border-gray-200 text-[14px] text-gray-400 p-2 outline-none bg-transparent">
+                    <input type="text" value="GHS 10000" name="text" disabled class="w-full border border-gray-300 text-[14px] text-gray-600 p-2 outline-none bg-transparent">
                 </div>
 
-                <p class="text-red-400 text-[12px] text-center py-6">Need help with payment?</p>
+                <p class="text-red-500 text-[12px] text-center py-6"><a href="#!">Need help with payment?</a></p>
 
-                <button type="submit" class="bg-gray-500 w-full py-2 rounded">
-                  <a href="" class="text-white">
+                <button type="submit" class="bg-gray-500 text-white w-full py-2 rounded">
                     <i class="fa fa-solid fa-dollar"></i>
                     Pay
-                  </a>
               </button>
             </form>
          </div>

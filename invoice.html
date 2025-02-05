@@ -16,29 +16,31 @@
         <div class=" navbar-wrapper mx-auto px-4 py-4 flex justify-between items-center">
           <div class="navbar">
             <div class="navbar-title">
-                <img src="files/kudiPay-logo.png" alt="KudiPay Logo" class="h-10 mr-3">    
-                <span class="text-xl font-semibold text-gray-600">KudiPay</span>
+                <a href="home.html" class="flex items-center ">
+                    <img src="files/kudiPay-logo.png" alt="KudiPay Logo" class="h-10 mr-[2px]">    
+                    <span class="text-xl font-semibold text-gray-600">KudiPay</span>
+                </a>
             </div>
             <div class="nav-links-wrapper">
-              <div class="nav-links" id="nav-links">
-                <a class="nav-link" href="home.html" tabindex="0" role="link">
-                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/17da197c92654774add6a532f5845f39/9766e359dd5b77d7e7d79ac0092fdbe6f1b93298c55896ce035f261e0628dcb4?apiKey=17da197c92654774add6a532f5845f39&" alt="Home icon" />
-                  <div>Home</div>
-                </a>
-                <a class="nav-link" href="invoice.html" tabindex="0" role="link">
-                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/17da197c92654774add6a532f5845f39/2f73f4dc623f007d9b7a2ae2d36ffb3526dfe620ac0ed360c558035447c22548?apiKey=17da197c92654774add6a532f5845f39&" alt="Invoice icon" />
-                  <div>Invoice</div>
-                </a>
-                <a class="nav-link " href="faq.html" tabindex="0" role="link">
-                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/17da197c92654774add6a532f5845f39/68390dcac8c8152f1ef0f8fb6c650fd500e6bc7d6da3a4750e985a11c7b5ac00?apiKey=17da197c92654774add6a532f5845f39&" alt="FAQ icon" />
-                  <div>FAQ</div>
-                </a>
-                <a class="nav-link" href="help.html" tabindex="0" role="link">
-                  <img loading="lazy" class="icon-img" src="https://cdn.builder.io/api/v1/image/assets/17da197c92654774add6a532f5845f39/14b175277c40660965d917afd8a519e0bf2772524e227062af556a588fd31178?apiKey=17da197c92654774add6a532f5845f39&" alt="Help icon" />
-                  <div>Help</div>
-                </a>
+                <div class="nav-links" id="nav-links">
+                  <a class="nav-link" href="home.html" tabindex="0" role="link">
+                      <i class="fa fa-solid fa-home img-icon"></i>
+                    <div>Home</div>
+                  </a>
+                  <a class="nav-link" href="invoice.html" tabindex="0" role="link">
+                      <i class="fa-solid fa-file-invoice img-icon"></i>
+                    <div>Invoice</div>
+                  </a>
+                  <a class="nav-link " href="faq.html" tabindex="0" role="link">
+                      <i class="fa-solid fa-circle-question img-icon"></i>
+                    <div>FAQ</div>
+                  </a>
+                  <a class="nav-link" href="help.html" tabindex="0" role="link">
+                      <i class="fa-solid fa-circle-info img-icon"></i>
+                    <div>Help</div>
+                  </a>
+                </div>
               </div>
-            </div>
             <div class="account-section">
              <div class="account-wrapper">
                 <div class="account-details" id="account-details">
@@ -55,7 +57,7 @@
                     </div>
                     <div class="dropdown-item">
                         <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/17da197c92654774add6a532f5845f39/13ede671c62a21ea00d03d9de5a4df1ea5ac243fc4a2d3a7da23469afdace5a1?apiKey=17da197c92654774add6a532f5845f39&" alt="Sign out icon" />
-                        <div>Sign-Out</div>
+                        <div><a href="login.html">Sign-Out</a></div>
                     </div>
                 </div> 
              </div>
@@ -77,12 +79,12 @@
                 <p class="text-gray-600">Here's a list of all invoices in the invoices queue</p>
             </div>
             <div class="flex items-center mb-4">
-                <p class="mr-4"><i class="fa-solid fa-gear text-[#747474]"></i></p>
+                <p class="mr-4 cursor-pointer"><i class="fa-solid fa-gear text-[#747474]"></i></p>
                 <div class="relative w-[400px]">
                     <input type="search" name="search" id="search" placeholder="Search" class="w-full pl-4 pr-14 py-2 border rounded-full outline-none">
                     <i class="fa fa-solid fa-magnifying-glass text-[#747474] absolute right-8 cursor-pointer top-[1.8rem] transform -translate-y-1/2"></i>
                 </div>
-                <p class="ml-4"><i class="fa fa-solid fa-download text-[#747474]"></i></p>
+                <p class="ml-4 cursor-pointer"><i class="fa fa-solid fa-download text-[#747474]"></i></p>
             </div>
         </section>
 
@@ -121,7 +123,7 @@
                             <td class="py-4 px-4 border-b border-gray-300 font-bold"><a href="#!" class="text-blue-500">FF201ED810001</a></td>
                             <td class="py-4 px-4 border-b border-gray-300">Property rate</td>
                             <td class="py-4 px-4 border-b border-gray-300 ">GHS10000</td>
-                            <td class="py-4 px-4 border-b text-[16px] border-gray-300 text-green-600 font-bold">PAID</td>
+                            <td class="py-4 px-4 border-b text-[14px] border-gray-300 text-green-600 font-bold">PAID</td>
                             <td class="py-4 px-4 "></td>
                         </tr>
                         <tr class="text-[#747474] whitespace-nowrap text-[14px]">
@@ -145,7 +147,7 @@
                             <td class="py-4 px-4   font-bold"><a href="#!" class="text-blue-500">FF201ED810001</a></td>
                             <td class="py-4 px-4  ">Property rate</td>
                             <td class="py-4 px-4   ">GHS10000</td>
-                            <td class="py-4 px-4  text-[16px] border-gray-300 text-green-600 font-bold">PAID</td>
+                            <td class="py-4 px-4  text-[14px] border-gray-300 text-green-600 font-bold">PAID</td>
                             <td class="py-4 px-4 "></td>
                         </tr>
                         <tr class="text-[#747474] whitespace-nowrap text-[14px]">
@@ -153,7 +155,7 @@
                             <td class="py-4 px-4 border-b border-gray-300 font-bold"><a href="#!" class="text-blue-500">FF201ED810001</a></td>
                             <td class="py-4 px-4 border-b border-gray-300">Property rate</td>
                             <td class="py-4 px-4 border-b border-gray-300 ">GHS10000</td>
-                            <td class="py-4 px-4 border-b text-[16px] border-gray-300 text-green-600 font-bold">PAID</td>
+                            <td class="py-4 px-4 border-b text-[14px] border-gray-300 text-green-600 font-bold">PAID</td>
                             <td class="py-4 px-4 "></td>
                         </tr>
                         <tr class="text-[#747474] whitespace-nowrap text-[14px]">

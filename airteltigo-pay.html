@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Payment</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="js/pay.js" defer></script>
     <script src="js/index.js" defer></script>
     <script src="https://kit.fontawesome.com/1566b08547.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-gray-100">
-
-  <!-- Nav-Section -->
+    <!-- Nav-Section -->
     <nav class="bg-white shadow-md sticky top-0 z-50" role="navigation" aria-label="Main Navigation">
         <div class=" navbar-wrapper mx-auto px-4 py-4 flex justify-between items-center">
           <div class="navbar">
             <div class="navbar-title">
-                 <a href="home.html" class="flex items-center ">
-                    <img src="files/kudiPay-logo.png" alt="KudiPay Logo" class="h-10 mr-[2px]">    
-                    <span class="text-xl font-semibold text-gray-600">KudiPay</span>
-                </a>
+              <a href="home.html" class="flex items-center ">
+                <img src="files/kudiPay-logo.png" alt="KudiPay Logo" class="h-10 mr-[2px]">    
+                <span class="text-xl font-semibold text-gray-600">KudiPay</span>
+            </a>
             </div>
             <div class="nav-links-wrapper">
               <div class="nav-links" id="nav-links">
@@ -69,58 +69,55 @@
             </div>
           </div>
         </div>
-    </nav> 
+    </nav>
 
-    <!-- Main-Section -->
-    <main class="container mx-auto px-4 py-8">
-        <section class="welcome-section text-center" role="region" aria-labelledby="welcome-title">
-            <div class="content-wrapper">
-                <div class="text-content mb-8">
-                    <h2 id="welcome-title" class="text-3xl font-semibold text-gray-800">Welcome To KudiPay</h2>
-                    <p class="text-gray-600 mt-4">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non sem
-                        tellus. Aliquam vitae ultrices tellus. Donec lacinia neque dui, ut
-                        bibendum risus interdum ut. Sed non lorem vitae velit gravida tincidunt.
-                        Vivamus ut finibus elit. Quisque id nisl at nunc interdum interdum in ac
-                        urna.
-                    </p>
+   <main class="px-4 lg:px-0 lg:w-3/5 mx-auto h-screen">
+     <section class="mt-3">
+        <div style="margin-top: 3rem;">
+          <button onclick="goBack()" class=" rounded-full py-[6px] px-[18px] text-[#3D5361] text-[13px]" >
+            <i class="fa-solid fa-circle-arrow-left mr-[0.5rem]"></i>
+            Back
+          </button>
+        </div>
+         <div class="flex justify-center items-center w-full h-screen ">
+            <form action="" onsubmit="return validateForm()"  style="width: 400px;background:white;padding:1.5rem;">
+                <div class="bg-gray-200 flex justify-between items-center p-4">
+                    <div class="flex items-center gap-2">
+                      <div class=" pay-imgs-wrapper">
+                        <img loading="lazy" src="files/airteltigo-money-logo-.png" class="object-cover object-center pay-imgs" alt="MTN logo"/>
+                      </div>
+                      <div class="">
+                          <h5 class="text-[12px] font-bold">KudiPay wallet</h5>
+                          <small class="text-gray-400 font-semibold">AirtelTigo</small>
+                      </div>
+                    </div>
+                    <div class="">
+                      <p class="text-gray-700 text-[10px]"><a href="payment.html">Change</a></p>
+                    </div>
                 </div>
-                <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/17da197c92654774add6a532f5845f39/cacb2c941898cfed9057da4f105848d59bf621d631f6bbb31df49f3bb113929d?apiKey=17da197c92654774add6a532f5845f39&"
-                    class="mx-auto rounded-lg shadow-lg"
-                    alt="KudiPay welcome illustration"
-                />
-            </div>
-        </section>
-        <section class="py-12 bg-gray-100">
-            <div class="container mx-auto flex flex-wrap items-center justify-center gap-12">
-                <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/17da197c92654774add6a532f5845f39/85fc7f1d63d11d62e4996024caed856b84ea7b719253130f83809848a034e5e0?apiKey=17da197c92654774add6a532f5845f39&"
-                    alt="Payment Illustration"
-                    class="object-contain rounded-lg shadow-lg w-full max-w-md"
-                />
-                <div class="flex flex-col max-w-md p-6 bg-white rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">
-                        Pay using our platform and get an instant Invoice
-                    </h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non sem
-                        tellus. Aliquam vitae ultrices tellus. Donec lacinia neque dui, ut
-                        bibendum risus interdum ut. Sed non lorem vitae velit gravida tincidunt.
-                        Vivamus ut finibus elit. Quisque id nisl at nunc interdum interdum in ac
-                        urna.
-                    </p>
+                <div class="input-field py-6">
+                    <input type="text" placeholder="Enter your number" name="phone" id="phone" class="w-full text-[14px] p-2 border border-gray-300 outline-none bg-transparent" required>
                 </div>
-            </div>
-        </section>
+                <div class="input-field py-6">
+                    <input type="text" value="GHS 10000" name="text" disabled class="w-full border border-gray-300 text-[14px] text-gray-600 p-2 outline-none bg-transparent">
+                </div>
+
+                <p class="text-red-500 text-[12px] text-center py-6"><a href="#!">Need help with payment?</a></p>
+
+                <button type="submit" class="bg-gray-500 text-white w-full py-2 rounded">
+                    <i class="fa fa-solid fa-dollar"></i>
+                    Pay
+              </button>
+            </form>
+         </div>
+          
+      </section>
     </main>
     
-    <!-- Footer-Section -->
-    <footer class="flex gap-5 flex-col justify-center items-center h-52 text-base font-semibold leading-none text-white bg-gray-800 px-5" role="contentinfo" aria-label="Footer">
-      <img src="files/rpl-logo.svg" alt="KudiPay Logo" class="w-10 h-10  bg-white p-2 rounded-full">
-      <div class="gap-2.5 p-2.5 mt-4" tabindex="0">Designed by RPLTech</div>
-  </footer>
+    <!-- Footer-Sction -->
+    <footer class="flex gap-3 flex-col justify-center items-center h-52 text-base font-semibold leading-none text-white bg-gray-800 px-5" role="contentinfo" aria-label="Footer">
+        <img src="files/rpl-logo.svg" alt="KudiPay Logo" class="w-10 h-10  bg-white p-2 rounded-full">
+        <div class="gap-2.5 p-2.5" tabindex="0">Designed by RPLTech</div>
+    </footer>
 </body>
 </html>

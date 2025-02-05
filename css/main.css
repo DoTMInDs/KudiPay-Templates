@@ -36,19 +36,26 @@
 .payment-container{
     width: 60%;
     margin: auto;
-    height: 100vh;
+    /* height: 100vh; */
 }
 .payment-section-1{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100vh;
 }
 .payment-section-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+}
+@media screen and (max-width:600px) {
+    .payment-section-grid{
+        display: flex;
+        flex-direction: column;
+     } 
 }
 
 .navbar{

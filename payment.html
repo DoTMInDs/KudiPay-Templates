@@ -70,59 +70,60 @@
         </div>
     </nav>
 
-   <main class="payment-container">
-       <section class="">
-            <button onclick="goBack()" class="mt-[6rem] cursor-pointer mb-[1rem] rounded-full py-[6px] px-[18px] border border-[#3D5361] text-[#3D5361] text-[13px]">
-                <i class="fa-solid fa-circle-arrow-left mr-[0.5rem]"></i>
-                Back
-            </button>
+   <main class="payment-wrapper">
+        <div class="payment-container">
             <div class="">
+                <button onclick="goBack()" class="mt-[6rem] cursor-pointer mb-[1rem] rounded-full py-[6px] px-[18px] border border-[#3D5361] text-[#3D5361] text-[13px]">
+                    <i class="fa-solid fa-circle-arrow-left mr-[0.5rem]"></i>
+                    Back
+                </button>
                 <div class="">
-                    <div class="text-[2.5rem] font-bold text-[#3d5361]">
-                        Payment Methods
-                    </div>
-                    <div class="text-[18px] text-[#3d5361]">
-                        Here’s a list of all payment methods that are available to you. Select your payment method to proceed.
+                    <div class="">
+                        <div class="text-[2.5rem] font-bold text-[#3d5361]">
+                            Payment Methods
+                        </div>
+                        <div class="text-[18px] text-[#3d5361]">
+                            Here’s a list of all payment methods that are available to you. Select your payment method to proceed.
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="my-[8rem] bg-[#ffff] w-[100%]">
-            <div class="payment-section-grid">
-               <a href="mtn-pay.html" class="shadow-md rounded-[0.5rem] m-[2rem]">
-                    <div class="flex justify-center items-center flex-col w-[200px] p-[1.5rem]">
-                        <div tabindex="0" role="img" aria-label="Image for AirtelTigo" class="w-[150px] h-[150px] flex items-center justify-center  rounded">
-                            <img src="files/mtn-momo.jpeg" alt="" class="w-[100%] object-center object-cover">
-                        </div>
-                        <div class="mt-[5px] text-base font-semibold leading-none text-center text-black text-opacity-70">
-                            MTN
-                        </div>
-                    </div>
-               </a>
-               <a href="airteltigo-pay.html" class="shadow-md rounded-[0.5rem] m-[2rem]">
-                    <div class="flex justify-center items-center flex-col w-[200px]  rounded p-[1.5rem]">
-                        <div tabindex="0" role="img" aria-label="Image for AirtelTigo"  class="w-[150px] h-[150px] flex items-center justify-center  rounded" >
-                            <img src="files/airteltigo-money-logo-.png" alt="" class="w-[100%] object-center object-cover">
-                        </div>
-                        <div class="mt-[5px] text-base font-semibold leading-none text-center text-black text-opacity-70">
-                            AirtelTigo
-                        </div>
-                    </div>
-               </a>
-               <a href="telecel-pay.html" class="shadow-md rounded-[0.5rem] m-[2rem]">
-                    <div class="flex justify-center items-center flex-col w-[200px] p-[1.5rem]">
-                        <div tabindex="0" role="img" aria-label="Image for AirtelTigo"  class="w-[150px] h-[150px] flex items-center justify-center   rounded">
-                            <img src="files/Telecel-Cash-Logo.jpg" alt="" class="w-[100%] object-center object-cover">
-                        </div>
-                        <div class="mt-[5px] text-base font-semibold leading-none text-center text-black text-opacity-70">
-                            Telecel
-                        </div>
-                    </div>
-               </a>
-                <!-- Repeat for other payment methods -->
+            <div class="my-[8rem] payment-section-wrapper">
+                <div class="payment-section-grid">
+                    <a href="mtn-pay.html" class="shadow-md rounded-[0.5rem] ">
+                            <div class="flex justify-center items-center flex-col w-[200px] p-[1.5rem]">
+                                <div tabindex="0" role="img" aria-label="Image for AirtelTigo" class="w-[150px] h-[150px] flex items-center justify-center  rounded">
+                                    <img src="files/mtn-momo.jpeg" alt="" class="w-[100%] object-center object-cover">
+                                </div>
+                                <div class="mt-[5px] text-base font-semibold leading-none text-center text-black text-opacity-70">
+                                    MTN
+                                </div>
+                            </div>
+                    </a>
+                    <a href="airteltigo-pay.html" class="shadow-md rounded-[0.5rem] ">
+                            <div class="flex justify-center items-center flex-col w-[200px]  rounded p-[1.5rem]">
+                                <div tabindex="0" role="img" aria-label="Image for AirtelTigo"  class="w-[150px] h-[150px] flex items-center justify-center  rounded" >
+                                    <img src="files/airteltigo-money-logo-.png" alt="" class="w-[100%] object-center object-cover">
+                                </div>
+                                <div class="mt-[5px] text-base font-semibold leading-none text-center text-black text-opacity-70">
+                                    AirtelTigo
+                                </div>
+                            </div>
+                    </a>
+                    <a href="telecel-pay.html" class="shadow-md rounded-[0.5rem] ">
+                            <div class="flex justify-center items-center flex-col w-[200px] p-[1.5rem]">
+                                <div tabindex="0" role="img" aria-label="Image for AirtelTigo"  class="w-[150px] h-[150px] flex items-center justify-center   rounded">
+                                    <img src="files/Telecel-Cash-Logo.jpg" alt="" class="w-[100%] object-center object-cover">
+                                </div>
+                                <div class="mt-[5px] text-base font-semibold leading-none text-center text-black text-opacity-70">
+                                    Telecel
+                                </div>
+                            </div>
+                    </a>
+                    <!-- Repeat for other payment methods -->
+                </div>
             </div>
-        </section>
+        </div>
     </main>
     
     <!-- Footer-Sction -->

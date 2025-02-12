@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
     <script src="js/index.js" defer></script>
     <script src="https://kit.fontawesome.com/1566b08547.js" crossorigin="anonymous"></script>
 </head>
@@ -30,6 +31,32 @@
                 <a class="nav-link" href="invoice.html" tabindex="0" role="link">
                     <i class="fa-solid fa-file-invoice img-icon"></i>
                   <div>Invoice</div>
+                </a>
+                <a  href="#!" tabindex="0" role="link" >
+                    <div class="nav-link payment-details" id="payment-details">
+                        <i class="fa-regular fa-credit-card img-icon"></i>
+                        <div>Payment Methods</div>
+                    </div>
+                    <div class=" p-dropdown" id="payment-dropdown">
+                        <a href="#!" class="dropdown-item p-dropdown-item flex items-center gap-[1rem] cursor-pointer p-[1rem] text-[#3b5361]">
+                            <div class="  w-[30px] h-[20px]">
+                                <img loading="lazy" src="files/mtn-momo.jpeg" class="object-cover object-center w-[100%]" alt="MTN logo"/>
+                            </div>
+                            <div>Mtn-Momo-Pay</div>
+                        </a>
+                        <a href="" class="dropdown-item p-dropdown-item  flex items-center gap-[1rem] cursor-pointer p-[1rem] text-[#3b5361]">
+                            <div class=" w-[30px] h-[20px]">
+                                <img loading="lazy" src="files/Telecel-Cash-Logo.jpg" class="object-cover object-center w-[100%]" alt="MTN logo"/>
+                            </div>
+                            <div>Telecel-Cash-Pay</div>
+                        </a>
+                        <a href="" class="dropdown-item p-dropdown-item  flex items-center gap-[1rem] cursor-pointer p-[1rem] text-[#3b5361]">
+                            <div class=" w-[30px] h-[20px]">
+                                <img loading="lazy" src="files/airteltigo-money-logo-.png" class="object-cover object-center w-[100%]" alt="MTN logo"/>
+                            </div>
+                            <div>AirtelTigo-Pay</div>
+                        </a>
+                    </div> 
                 </a>
                 <a class="nav-link " href="faq.html" tabindex="0" role="link">
                     <i class="fa-solid fa-circle-question img-icon"></i>

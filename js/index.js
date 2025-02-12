@@ -22,3 +22,14 @@ accountBtn.addEventListener('click', () => {
 function goBack() {
     window.history.back();
 }
+
+
+// dropdown account
+const PaymentDropdown = document.getElementById('payment-dropdown');
+const PaymentAccountBtn = document.getElementById('payment-details');
+
+PaymentAccountBtn.addEventListener('click', () => {
+    PaymentDropdown.classList.toggle('show');
+    // console.log('clicked');
+})
+
